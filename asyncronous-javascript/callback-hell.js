@@ -17,19 +17,19 @@ const getPosts = (resource, callback) => {
 };
 
 //! Callback hell - AVOID GENERATING THIS STRUCTURE
-getPosts("json/data-1.json", (error, data) => {
+getPosts("https://jsonplaceholder.typicode.com/posts", (error, data) => {
   if (error) {
     console.log(`There was an error: ${error}`);
   }
   console.log("Data available", data);
 
-  getPosts("json/data-2.json", (error, data) => {
+  getPosts("https://jsonplaceholder.typicode.com/users", (error, data) => {
     if (error) {
       console.log(`There was an error: ${error}`);
     }
     console.log("Data available", data);
-    
-    getPosts("json/data-3.json", (error, data) => {
+
+    getPosts("https://jsonplaceholder.typicode.com/photos", (error, data) => {
       if (error) {
         console.log(`There was an error: ${error}`);
       }
@@ -38,5 +38,5 @@ getPosts("json/data-1.json", (error, data) => {
   });
 });
 
-//! HTTP requests for local files is DEPRECATED
+//! HTTP requests for local files is DEPRECATED without using a server
 //Error: Access to XMLHttpRequest at ${url} from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, isolated-app, brave, https, chrome-untrusted, data, chrome-extension, chrome.
