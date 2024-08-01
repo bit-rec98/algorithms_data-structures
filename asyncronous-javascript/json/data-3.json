@@ -1,0 +1,17 @@
+[
+  {
+    "name": "provider-instruments",
+    "role": "provider",
+    "email": "provider@email.com"
+  },
+  {
+    "name": "provider-products",
+    "role": "provider",
+    "email": "email-products@email.com"
+  },
+  {
+    "name": "provider-food",
+    "role": "provider",
+    "email": "food@provider.com"
+  }
+]
